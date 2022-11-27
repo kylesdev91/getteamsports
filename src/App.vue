@@ -6,9 +6,9 @@
 
       <v-spacer></v-spacer>
 
-      <v-toolbar-title class="mx-6">Parent</v-toolbar-title>
+      <v-toolbar-title @click="goToParent" class="mx-6">Parent</v-toolbar-title>
 
-      <v-toolbar-title>Coach</v-toolbar-title>
+      <v-toolbar-title @click="goToCoach">Coach</v-toolbar-title>
 
       <v-menu bottom left>
         <template v-slot:activator="{ on, attrs }">
@@ -28,5 +28,15 @@ export default {
   data: () => ({
     //
   }),
+  methods: {
+    goToParent() {
+      this.$router.push("/parentstats");
+      console.log("Here!");
+    },
+    goToCoach() {
+      this.$router.push("/coachstats");
+      console.log("Here!");
+    },
+  },
 };
 </script>
