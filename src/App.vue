@@ -1,6 +1,5 @@
 <template>
   <v-app>
-
     <v-system-bar color="blue darken-3"></v-system-bar>
     <v-app-bar color="primary" dark class="flex-grow-0">
       <v-toolbar-title>Get Team Sports</v-toolbar-title>
@@ -18,6 +17,7 @@
         </template>
       </v-menu>
     </v-app-bar>
+    <router-view />
   </v-app>
 </template>
 
@@ -30,11 +30,10 @@ export default {
   }),
   methods: {
     goToParent() {
-      this.$router.push("/parentstats");
+      this.$router.push("/parentcpn");
     },
     goToCoach() {
-      this.$router.push("/coachstats");
-      
+      this.$router.push("/coachcpn");
     },
   },
 };

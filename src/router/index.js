@@ -1,8 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import ParentStats from "../components/ParentStats";
-import CoachStats from "../components/CoachStats";
+import ParentCPN from "../components/ParentCPN";
+import CoachCPN from "../components/CoachCPN";
 
 Vue.use(VueRouter);
 
@@ -13,14 +13,14 @@ const routes = [
     component: HomeView,
   },
   {
-    path: "/parentstats",
-    name: "parentstats",
-    component: ParentStats,
+    path: "/parentcpn",
+    name: "parentpn",
+    component: ParentCPN,
   },
   {
-    path: "/coachstats",
-    name: "coachstats",
-    component: CoachStats,
+    path: "/coachcpn",
+    name: "coachcpn",
+    component: CoachCPN,
   },
   {
     path: "/about",
