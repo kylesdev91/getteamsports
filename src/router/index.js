@@ -1,8 +1,12 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import ParentCPN from "../components/ParentCPN";
-import CoachCPN from "../components/CoachCPN";
+import ParentComp from "../components/ParentComp";
+import CoachComp from "../components/CoachComp";
+import ParentLesson from "../components/ParentLesson";
+import ParentTryout from "../components/ParentTryout";
+import CoachLesson from "../components/CoachLesson";
+import CoachTryout from "../components/CoachTryout";
 
 Vue.use(VueRouter);
 
@@ -13,14 +17,34 @@ const routes = [
     component: HomeView,
   },
   {
-    path: "/parentcpn",
+    path: "/parentcomp",
     name: "parentpn",
-    component: ParentCPN,
+    component: ParentComp,
   },
   {
-    path: "/coachcpn",
-    name: "coachcpn",
-    component: CoachCPN,
+    path: "/coachcomp",
+    name: "coachcomp",
+    component: CoachComp,
+  },
+  {
+    path: "/parentlesson",
+    name: "parentlesson",
+    component: ParentLesson,
+  },
+  {
+    path: "/parenttryout",
+    name: "parenttryout",
+    component: ParentTryout,
+  },
+  {
+    path: "/coachlesson",
+    name: "coachlesson",
+    component: CoachLesson,
+  },
+  {
+    path: "/coachtryout",
+    name: "coachtryout",
+    component: CoachTryout,
   },
   {
     path: "/about",

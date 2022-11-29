@@ -30,10 +30,10 @@ export default {
   }),
   methods: {
     goToParent() {
-      this.$router.push("/parentcpn");
+      this.$router.push("/parentcomp");
     },
     goToCoach() {
-      this.$router.push("/coachcpn");
+      this.$router.push("/coachcomp");
     },
   },
 };
